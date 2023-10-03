@@ -3,21 +3,25 @@
 The code creates Combinatorial Discrete Cell Complexes and related measures based on the <a href="https://neper.info/" target="_blank"> Neper </a> output '*.tess' files of 2D/3D space tessellations.
 </p>
 
+Combinatorial (../combinatorial/): 
 <p>
-Combinatorial (../combinatorial/):
 'number_of_cells' - numbers of 0-cells (first line), 1-cells (second line), 2-cells (third line) and 3-cells (fourth line) in the PCC <br>
 'vertex_set' - a simple list of vertex IDs <br>
 'edge_set'  - a list of edges represented as a couples of vertex IDs written in each line <br>
 'face_set'  - a list of faces represented as a sets of vert IDs written in each line <br>
 'grain_set'  - a list of grains represented as a set of vertex IDs written in each line <br>
+</p>
 
 Boundaries:
+<p>
 'node_tboundaries' - 0-cells belonging to the tessellation geometric bounbdaries <br>
 'edge_tboundaries' - 0-cells belonging to the tessellation geometric bounbdaries <br>
 'face_tboundaries' - 0-cells belonging to the tessellation geometric bounbdaries <br>
 'grain_tboundaries' - 0-cells belonging to the tessellation geometric bounbdaries <br>
+</p>
 
 Adjacency matrices (../algebraic/):
+<p>
 'A0' - adjacency 0-cells x 0-cells  sparse matrix <br>
 'D0' - diagonal degree matrix of 0-cells (contains number of neighbours for each 0-cell) <br>
 'A1' - adjacency 1-cells x 1-cells sparse matrix\ <br>
@@ -26,11 +30,14 @@ Adjacency matrices (../algebraic/):
 'D2' - diagonal degree matrix of 2-cells (contains number of neighbours for each 2-cell) <br>
 'A3' - adjacency 3-cells x 3-cells sparse matrix <br>
 'D3' - diagonal degree matrix of 3-cells (contains number of neighbours for each 3-cell) <br>
+</p>
 
 Incidence matrices(../algebraic/):
+<p>
 'B1' - incidence 1-cells x 0-cells sparse matrix <br>
 'B2' - incidence 2-cells x 1-cells sparse matrix <br>
 'B3' - incidence 3-cells x 2-cells sparse matrix <br>
+</p>
 
 Coordinates (../coordinates/):
 'vertex_seeds' - vertices Cartesian coordinates from the initial tessellation of space <br>
